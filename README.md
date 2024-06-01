@@ -32,15 +32,17 @@ spring.datasource.password=YOUR_DB_PASSWORD
 ```
 mvn clean package
 ```
-* Run the application with Maven, passing the database configuration values as program arguments:
+* Run the application with Maven:
 ```
 mvn spring-boot:run
 ```
 
 
 ## Usage
-Once the application is running, it will fetch data from the CoinDesk API and store it in the configured database. You can access the stored data through the database tables.
-
+Once the application is running, you can hit API to fetch data from the CoinDesk API and store it in the configured database. You can access the stored data through the database tables.
+```
+GET /api/v1/currentPrice
+```
 
 ## Additional Notes
 * Make sure your database server is running before starting the application.
